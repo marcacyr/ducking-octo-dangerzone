@@ -1,0 +1,24 @@
+<div class="span8 dosnt pull-right">
+  <div>%span Already have an account?
+  <a href="#", "data-toggle" = "modal", "data-target" = "#signInModal">Sign in </a>
+  </div>
+<div>#signInModal.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+  <div class="modal-header">
+    <div class="button close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"}"> x </div>
+    <div><h3 id="myModalLabel">Sign in</h3></div>
+  <div class="modal-body">
+    = simple_form_for user_session_path do |f|
+      = f.input :email
+      = f.input :password
+
+      <button class="button btn btn-primary" style='margin-top: 5px; margin-bottom: 5px;'>Sign in</button>
+
+      <div class="inline" style='font-size: 12px;'>
+        = f.input_field :remember_me, as: :boolean, inline_label: 'Remember me'
+        / %button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Cancel
+        = link_to "Forgot your password?", new_password_path('user')
+      </div>
+  </div>
+  </div>
+</div>
+</div>
