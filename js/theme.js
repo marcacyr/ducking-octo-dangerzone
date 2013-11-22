@@ -19,6 +19,15 @@ $(function () {
 
     portfolioItem.initialize();
 });
+// this sets the button state to change to "loading..." for sign-in button when clicked for submit
+$('.fat-btn')
+    .click(function () {
+        var btn = $(this)
+        btn.button('loading')
+        // setTimeout(function () {
+        //     btn.button('reset')
+        // }, 3000)
+    });
 
 var portfolioItem = {
     initialize: function () {

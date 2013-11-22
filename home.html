@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
     <!-- Styles -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/bootstrap-overrides.css" rel="stylesheet">
@@ -14,6 +16,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/lib/animate.css" media="screen, projection">
     <link rel="stylesheet" href="css/sign-in.css" type="text/css" media="screen" />
+
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -72,7 +75,7 @@
                     <form>
                         <input type="text" placeholder="Email">
                         <input type="password" placeholder="Password">
-                        <input type="submit" placeholder="Confirm Password" value="sign in">
+                        <input type="submit" placeholder="Confirm Password" class="fat-btn" value="sign in" data-loading-text="Loading...">
                     </form>
                 </div>
 
@@ -147,9 +150,9 @@
                                     <input type="text" placeholder="Confirm Password">
                                     <div class="forgot">
                                         <span>Don’t have an account?</span>
-                                        <a href="sign-up.html">Sign up</a>
+                                        <a href="#">Contact us</a>
                                     </div>
-                                    <input type="submit" value="sign in">
+                                    <input type="submit" value="sign in" class="fat-btn" data-loading-text="loading...">
                                 </form>
                             </div>
 
