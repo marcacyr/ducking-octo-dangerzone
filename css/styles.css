@@ -1,0 +1,22 @@
+.edit-button {
+	text-transform:uppercase; 
+	color:#fff; 
+	background:#80006e; 
+	font-size:15px; 
+	padding:5px 18px; 
+	border:0 none; 
+	border-radius: 3px;
+}
+
+.hero-unit {
+  background-color: rgba(204, 204, 204, .8);
+  margin:30px;
+}
+
+.events-table {
+	color: #000;
+}
+
+.footer {
+	text-align: center;
+}
