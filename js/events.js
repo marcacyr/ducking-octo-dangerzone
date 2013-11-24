@@ -7,3 +7,5 @@ $(document).ready(function(){
     todayHighlight: true
 	});
 });
+
+// This file adds datepicker functionality and other jQuery to the events pages.
